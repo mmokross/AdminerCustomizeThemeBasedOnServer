@@ -2,6 +2,7 @@
 
 The plugin AdminerCustomizeThemeBasedOnServer enables the customization of the
 active theme based on the active server selected.
+- see Adminer - Database management in a single PHP file https://www.adminer.org/
 
 It tries to add a SERVER specific CSS file using the following convention
 - same directory as adminer.css
