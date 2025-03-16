@@ -2,9 +2,9 @@
 
 /** Enable customization of the active theme based on the active server
  *
- * It tries to add a SERVER specific CSS file using the following convention
+ * It tries to add a Adminer\SERVER specific CSS file using the following convention
  * - same directory as adminer.css
- * - name it server-[SERVER]-adminer.css
+ * - name it server-[Adminer\SERVER]-adminer.css
  * - add any additional CSS styles, you want to apply to the adminer.css or the default.css
  *
  * See the example
@@ -30,7 +30,7 @@ class AdminerCustomizeThemeBasedOnServer {
 		$return = array();
 		$filenames = array(
 			"adminer.css",
-			"server-" . SERVER . "-adminer.css",
+			"server-" . Adminer\SERVER . "-adminer.css",
 		);
 		foreach ($filenames as $filename) {
 			if (file_exists($filename)) {
